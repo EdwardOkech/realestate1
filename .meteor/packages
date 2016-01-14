@@ -35,3 +35,5 @@ mirageglobe:html5shivcdn
 mrt:fancybox
 iron:router
 accounts-base
+accounts-facebook
+accounts-google
