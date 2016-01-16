@@ -1,3 +1,10 @@
-/**
- * Created by okech on 1/16/16.
- */
+// Define App constants
+
+if(Meteor.App){
+    throw new Meteor.Error('Meteor.App already defined? see client/lib/constants.js')
+}
+
+Meteor.App = {
+    NAME: 'Real Estate ',
+    DESCRIPTION: 'A map based real estate website for morocco'
+};
