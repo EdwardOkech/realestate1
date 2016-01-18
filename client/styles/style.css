@@ -2203,3 +2203,7 @@
 	.infobox .title a {
 		font-weight:bold;
 	}
+#iron-router-progress{
+	background-color: #ff9a12;
+	box-shadow: 0 0 5px #fff9ea;
+}

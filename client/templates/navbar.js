@@ -1,3 +1,5 @@
-/**
- * Created by okech on 1/18/16.
- */
+Template.navbar.helpers({
+    activePageHelper: function(routeName){
+        $('.active')
+    }
+})

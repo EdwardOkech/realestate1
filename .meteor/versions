@@ -18,6 +18,7 @@ caching-compiler@1.0.0
 caching-html-compiler@1.0.2
 callback-hook@1.0.4
 check@1.1.0
+coffeescript@1.0.11
 dburles:google-maps@1.1.5
 ddp@1.2.2
 ddp-client@1.2.1
@@ -58,6 +59,7 @@ jeremy:geocomplete@1.6.5_9
 johannesma:meteor-flexslider@0.0.1
 jquery@1.11.4
 launch-screen@1.0.4
+less@2.5.1
 livedata@1.0.15
 localstorage@1.0.5
 logging@1.0.8
@@ -74,6 +76,9 @@ mongo-id@1.0.1
 mrt:bootstrap-select@1.5.4
 mrt:fancybox@0.5.0
 mrt:fitvids@1.0.2
+mrt:iron-router-progress@0.9.3
+mrt:jquery-ui@1.9.2
+multiply:iron-router-progress@1.0.2
 npm-bcrypt@0.7.8_2
 npm-mongo@1.4.39_1
 oauth@1.1.6
@@ -89,6 +94,7 @@ reload@1.1.4
 retry@1.0.4
 reywood:iron-router-ga@0.7.1
 routepolicy@1.0.6
+sebdah:autocompletion@0.2.0
 service-configuration@1.0.5
 session@1.1.1
 sha@1.0.4

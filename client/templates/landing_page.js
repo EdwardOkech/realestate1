@@ -9,4 +9,20 @@ Template.landing_page.events({
         //event.preventDefault();
         this.render('/home');
     }
-})
+});
+
+Template.search.rendered = function () {
+    AutoCompletion.init('input#landing-entry');
+}
+
+Template.search.events = {
+    'Keyup input#landing-entry': function(){
+        AutoCompletion.autocomplete({
+            element: 'input#landing-entry',
+            collection: Cities,
+            field: 'name',
+            limit:0,
+            sort: {name: 1 }
+        });
+    }
+}

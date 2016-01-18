@@ -32,4 +32,5 @@ Router.map(function() {
         template: 'results',
         layoutTemplate: 'layoutMain'
     });
+
 });
