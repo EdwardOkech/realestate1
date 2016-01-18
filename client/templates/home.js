@@ -1,4 +1,4 @@
-Template.home.created({
+Template.home.helpers({
     flexsliderHelper:function(){
         $('#carousel').flexslider({
                 animation: "slide",

@@ -38,6 +38,7 @@ fortawesome:fontawesome@4.5.0
 gadicohen:robots-txt@0.0.10
 gadicohen:sitemaps@0.0.23
 geojson-utils@1.0.4
+goltfisch:jquery-backstretch@0.2.0
 google@1.1.7
 hot-code-push@1.0.0
 html-tools@1.0.5
