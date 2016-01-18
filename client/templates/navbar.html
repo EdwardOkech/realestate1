@@ -339,7 +339,11 @@
                                         </li><!-- end dropdown-submenu -->
                                     </ul><!-- end dropdown-menu -->
                                 </li><!-- end standard drop down -->
+                                {{#if currentUser }}
+                                    <li><a href="#" class="logout">LOGOUT</a> </li>
+                                {{ else }}
                                 <li><a href="/login">SE CONNECTER / CREER UN COMPTE</a></li>
+                                {{/if }}
                             </ul><!-- end nav navbar-nav -->
                         </div><!-- end #navbar-collapse-1 -->
                      </div><!-- end dm_container -->

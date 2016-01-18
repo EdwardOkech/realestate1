@@ -63,38 +63,46 @@
 //});
 if(Meteor.isClient){
     Template.register.events({
-        'submit #registerform':function(e,t){
-            e.preventDefault();
+    'submit form': function(event){
+        event.preventDefault();
+        var email = $('[name=reg-email]').val();
+        var password = $('[name=reg-password]').val();
+        Accounts.createUser({
+            email: email,
+            password: password
+        }, function(error){
+            if(error){
+                alert(error.reason);
+            }else {
+                Router.go('/home');
+            }
+        });
+        Router.go('/home');
+    }
+});
+    Template.navbar.events({
+    'click .logout': function(event){
+        event.preventDefault();
+        Meteor.logout();
+        Router.go('/login');
+    }
+});
 
-            Accounts.createUser({
-                username: t.find('#username').value,
-                email: t.find('#email').value,
-                password: t.find('#password').value,
-                profile:{
-                    fullname: t.find('#names').value
-                }
-            }, function(error){
-                    if(error){
-                        alert("Account is not created");
-                    }else {
-                        router.go('/home');
-                    }
 
-                });
-        }
-    });
+
+
     Template.signin.events({
-        'submit #loginform': function(e,t){
-            e.preventDefault();
-
-            var unam = t.find('#login-username').value,
-                password = t.find('#login-password').value;
-
-            Meteor.loginWithPassword(unam, password, function(error){
-                if(error){
-                    alert("Wrong Credentials");
-                }
-            })
-        }
-    })
+        'submit form': function(event){
+        event.preventDefault();
+        var email = $('[name=login-email]').val();
+        var password = $('[name=login-password]').val();
+        Meteor.loginWithPassword(email, password, function(error){
+            if(error){
+                alert(error.reason);
+            }else {
+                Router.go('/home');
+            }
+        });
+    }
+    });
 }
