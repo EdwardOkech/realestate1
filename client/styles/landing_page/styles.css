@@ -153,11 +153,11 @@ height: 60px;
 	font-size: 20px;
 	outline: 0;
 }
-#subscribe button[type="submit"]{
+#subscribe input[type="submit"]{
 background: rgb(255, 135, 19);
 color: #ecf0f1;
-width: auto;
-padding: 10px 25px;
+/*width: auto;*/
+padding: 14px 25px;
 cursor: pointer;
 margin-left: 50px
 font-weight: bold; 
@@ -168,7 +168,7 @@ border: 2px solid;
 	outline: 0;
 }
 
-#subscribe button[id="select"]{
+#subscribe button[id="select"],[id="select1"]{
 background: #1169ff;
 	width: 370px;
 	height: 60px;
@@ -183,7 +183,7 @@ background: #1169ff;
 	text-align:center;
 
 }
-#subscribe button[id="main"] {
+#subscribe input[id="main"] {
 	width: 150px;
 	outline: 0;
 }
@@ -210,6 +210,31 @@ background: #1169ff;
     border-right: 11px solid transparent;
 	top:125px;
     left:88px;
+
+}
+#triangle_down3 {
+
+	position:absolute;
+    width: 0;
+    height: 0;
+    border-top: 15px solid #1169ff;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+	top:125px;
+    left:464px;
+
+}
+
+#triangle_down2 {
+
+	position:absolute;
+    width: 0;
+    height: 0;
+    border-top: 20px solid #ecf0f1;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+	top:125px;
+    left:462px;
 
 }
 

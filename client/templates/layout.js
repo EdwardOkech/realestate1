@@ -1,7 +1,7 @@
 Template.layoutLanding.helpers({
-    onClickHelper:function(){
+    onClickHelper1:function(){
          $('#select').click(function () {
-		   $('#triangle_down').show(50000);
+		   $('#triangle_down').show();
 	       });
     }
 });

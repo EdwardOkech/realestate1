@@ -44,7 +44,7 @@
                     <p>
 
                         <button type="button" id="select">Acheter</button>
-                        <button type="button" id="select">Louer</button>
+                        <button type="button" id="select1">Louer</button>
 
                     </p>
 
@@ -53,11 +53,14 @@
                     <i id="triangle_down1" style="display: none"><i></i></i>
                   <i id="triangle_down" style="display: none"><i></i></i><br/>
 
+                    <!--Louer triangles -->
+                  <i id="triangle_down2" style="display: none"><i></i></i>
+                  <i id="triangle_down3" style="display: none"><i></i></i><br/>
 
                     <div></div>
 
                     <p><input name="" placeholder="Entrer une ville au Maroc" type="text" id="landing-entry"/>
-                        <a href="/results"><button type="submit" id="main">Search</button></a>
+                        <a href="/results"> <input type="submit" id="main" value="Search"/></a>
                     </p>
                 </form>
             </div>
@@ -68,11 +71,18 @@
         <script type="text/javascript" src="/client/lib/global.js"></script>
 
         <script>
-           $('#select').click(function () {
-		   $('#triangle_down').show();
-               $('#triangle_down1').show();
+
+          $('#select').click(function () {
+		   $('#triangle_down').add('#triangle_down1').show();
+               //$('#triangle_down1').show();
 	       });
            // $('.class1, .class2').click(some_function);
+            $('#select1').on('click', function() {
+               $('#triangle_down').add('#triangle_down1').addClass('hidden');
+               //$('#triangle_down1').addClass('hidden');
+              $('#triangle_down2').add('#triangle_down3').show();
+
+});
         </script>
 
     </main>
