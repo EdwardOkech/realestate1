@@ -24,6 +24,8 @@
 <template name="layoutLanding">
     <header>
         <title>Real Estate</title>
+        <link rel="stylesheet" type="text/css" class="" href="/css/bootstrap.css">
+
     </header>
     <main>
         <div id="Header">
@@ -40,11 +42,19 @@
             <div id="subscribe">
                 <form action="" method="post" onsubmit="">
                     <p>
-                        <input type="submit" value="Acheter" id="select"/>
-                        <input type="submit" value="Louer" id="select"/>
-                        <i class="sub-a fa fa-icon-collapse fa-2x"></i>
+                        <input type="" value="Acheter" id="select"/>
+                        <input type="" value="Louer" id="select"/>
+
                     </p>
-                    <!--<img src="images/loading.gif" id="arrow" style="display: none">-->
+
+
+
+
+
+                  <i id="triangle_down" style="display: none"><i></i></i><br/>
+
+                    <div></div>
+
                     <p><input name="" placeholder="Entrer une ville au Maroc" type="text" id="landing-entry"/>
                         <a href="/results"><input type="submit" value="Search" id="main"/></a></p>
                 </form>
@@ -54,6 +64,12 @@
         <div id="overlay"></div>
         <script type="text/javascript" src="/client/lib/Backstretch.js"></script>
         <script type="text/javascript" src="/client/lib/global.js"></script>
+
+        <script>
+           $('#select').click(function () {
+		   $('#triangle_down').show();
+	       });
+        </script>
 
     </main>
 </template>

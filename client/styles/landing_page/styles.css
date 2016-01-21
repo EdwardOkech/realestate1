@@ -151,6 +151,7 @@ border: 1px solid rgba(255, 255, 255, 0.76);
 padding: 0 10px;
 height: 60px;
 	font-size: 20px;
+	outline: 0;
 }
 #subscribe input[type="submit"]{
 background: rgb(255, 135, 19);
@@ -164,7 +165,9 @@ height: 60px;
 display: inline-block;
 border: 2px solid;
 	font-size: 20px;
+	outline: 0;
 }
+
 #subscribe input[id="select"]{
 background: #1169ff;
 	width: 370px;
@@ -174,10 +177,27 @@ background: #1169ff;
 	padding: 0 10px;
 	vertical-align: middle;
 	font-size: 20px;
+	outline: 0;
+	color: #ecf0f1;
+	border: 2px solid;
+	text-align:center;
 
 }
 #subscribe input[id="main"] {
 	width: 150px;
+	outline: 0;
+}
+#triangle_down {
+
+	position:absolute;
+    width: 0;
+    height: 0;
+    border-top: 21px solid #1169ff;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+	top:125px;
+    left:88px;
+
 }
 
 
