@@ -153,7 +153,7 @@ height: 60px;
 	font-size: 20px;
 	outline: 0;
 }
-#subscribe input[type="submit"]{
+#subscribe button[type="submit"]{
 background: rgb(255, 135, 19);
 color: #ecf0f1;
 width: auto;
@@ -168,7 +168,7 @@ border: 2px solid;
 	outline: 0;
 }
 
-#subscribe input[id="select"]{
+#subscribe button[id="select"]{
 background: #1169ff;
 	width: 370px;
 	height: 60px;
@@ -183,7 +183,7 @@ background: #1169ff;
 	text-align:center;
 
 }
-#subscribe input[id="main"] {
+#subscribe button[id="main"] {
 	width: 150px;
 	outline: 0;
 }
