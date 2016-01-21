@@ -192,9 +192,22 @@ background: #1169ff;
 	position:absolute;
     width: 0;
     height: 0;
-    border-top: 21px solid #1169ff;
+    border-top: 15px solid #1169ff;
     border-left: 9px solid transparent;
     border-right: 9px solid transparent;
+	top:125px;
+    left:90px;
+
+}
+
+#triangle_down1 {
+
+	position:absolute;
+    width: 0;
+    height: 0;
+    border-top: 20px solid #ecf0f1;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
 	top:125px;
     left:88px;
 
