@@ -169,7 +169,7 @@ border: 2px solid;
 }
 
 #subscribe button[id="select"],[id="select1"]{
-background: #1169ff;
+background: #ecf0f1;
 	width: 370px;
 	height: 60px;
 	/*padding-left: 100px;*/
@@ -178,11 +178,12 @@ background: #1169ff;
 	vertical-align: middle;
 	font-size: 20px;
 	outline: 0;
-	color: #ecf0f1;
+	color: #1169ff;
 	border: 2px solid;
 	text-align:center;
 
 }
+
 #subscribe input[id="main"] {
 	width: 150px;
 	outline: 0;

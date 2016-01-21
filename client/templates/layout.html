@@ -70,19 +70,40 @@
         <script type="text/javascript" src="/client/lib/Backstretch.js"></script>
         <script type="text/javascript" src="/client/lib/global.js"></script>
 
+
+
         <script>
 
-          $('#select').click(function () {
-		   $('#triangle_down').add('#triangle_down1').show();
-               //$('#triangle_down1').show();
+           /* $('#select').click(function () {
+		         $('#triangle_down').add('#triangle_down1').show();
 	       });
-           // $('.class1, .class2').click(some_function);
+
             $('#select1').on('click', function() {
                $('#triangle_down').add('#triangle_down1').addClass('hidden');
-               //$('#triangle_down1').addClass('hidden');
-              $('#triangle_down2').add('#triangle_down3').show();
+               $('#triangle_down2').add('#triangle_down3').show();
 
-});
+           });*/
+            $(document).ready(function() {
+                $('#select').click(function(){
+                    $(this).css('background','#1169ff');
+                    $(this).css('color','#ecf0f1');
+                    $('#triangle_down').add('#triangle_down1').show();
+                    if($('#select1').css('background','#1169ff') && $('#select1').css('color','#ecf0f1')){
+                        $('#select1').css('background','#ecf0f1');
+                        $('#select1').css('color','#1169ff');
+                    }
+                });
+                $('#select1').on('click', function() {
+                    $(this).css('background','#1169ff');
+                    $(this).css('color','#ecf0f1');
+                    $('#triangle_down').add('#triangle_down1').addClass('hidden');
+                    $('#select').css('background','#ecf0f1');
+                    $('#select').css('color','#1169ff');
+                    $('#triangle_down2').add('#triangle_down3').show();
+                });
+            })
+
+
         </script>
 
     </main>
