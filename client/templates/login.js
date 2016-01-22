@@ -10,6 +10,7 @@ if(Meteor.isClient){
         }, function(error){
             if(error){
                 alert(error.reason);
+                Router.go('/login');
             }else {
                 Router.go('/home');
             }
