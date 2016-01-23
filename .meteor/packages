@@ -47,3 +47,9 @@ sebdah:autocompletion
 momentjs:moment
 sanjo:jasmine
 yogiben:admin
+gwendall:simple-schema-i18n
+cfs:standard-packages
+cfs:s3
+cfs:gridfs
+aldeed:autoform
+chrismbeckett:toastr
