@@ -45,6 +45,7 @@ check@1.1.0
 chrismbeckett:toastr@2.1.2_1
 coffeescript@1.0.11
 dburles:google-maps@1.1.5
+dburles:mongo-collection-instances@0.3.4
 ddp@1.2.2
 ddp-client@1.2.1
 ddp-common@1.2.2
@@ -84,6 +85,7 @@ iron:url@1.0.11
 jeremy:geocomplete@1.6.5_9
 johannesma:meteor-flexslider@0.0.1
 jquery@1.11.4
+lai:collection-extensions@0.1.4
 launch-screen@1.0.4
 less@2.5.1
 livedata@1.0.15
@@ -94,6 +96,7 @@ meteor@1.1.10
 meteor-base@1.0.1
 meteorhacks:meteorx@1.0.2
 meteorhacks:unblock@1.1.0
+meteortoys:toykit@2.2.1
 mfactory:admin-lte@0.0.2
 minifiers@1.1.7
 minimongo@1.0.10
@@ -107,8 +110,8 @@ mongo-livedata@1.0.9
 mrt:bootstrap-select@1.5.4
 mrt:fancybox@0.5.0
 mrt:fitvids@1.0.2
-mrt:iron-router-progress@0.9.3
 mrt:jquery-ui@1.9.2
+msavin:mongol@1.6.2
 multiply:iron-router-progress@1.0.2
 npm-bcrypt@0.7.8_2
 npm-mongo@1.4.39_1

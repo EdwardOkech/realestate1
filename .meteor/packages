@@ -41,7 +41,6 @@ reywood:iron-router-ga
 spiderable
 gadicohen:sitemaps
 goltfisch:jquery-backstretch
-mrt:iron-router-progress
 multiply:iron-router-progress
 sebdah:autocompletion
 momentjs:moment
@@ -53,3 +52,5 @@ cfs:s3
 cfs:gridfs
 aldeed:autoform
 chrismbeckett:toastr
+msavin:mongol
+aldeed:collection2
