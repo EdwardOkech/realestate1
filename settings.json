@@ -1,4 +1,4 @@
-{
+{ "environment": "dev",
   "public":{
        "ga":{
 //         google analytics tracking ID
