@@ -143,7 +143,7 @@ clear: both;
 text-align:center;
 }
 #subscribe input {
-background: rgba(255, 255, 255, 0.52);
+background: white;
 color: #666666;
 vertical-align: middle;
 width: 593px;
@@ -178,7 +178,7 @@ background: #ecf0f1;
 	vertical-align: middle;
 	font-size: 20px;
 	outline: 0;
-	color: #1169ff;
+	color: #19b8df;
 	border: 2px solid;
 	text-align:center;
 
@@ -193,7 +193,7 @@ background: #ecf0f1;
 	position:absolute;
     width: 0;
     height: 0;
-    border-top: 15px solid #1169ff;
+    border-top: 15px solid #19b8df;
     border-left: 9px solid transparent;
     border-right: 9px solid transparent;
 	top:125px;
@@ -218,7 +218,7 @@ background: #ecf0f1;
 	position:absolute;
     width: 0;
     height: 0;
-    border-top: 15px solid #1169ff;
+    border-top: 15px solid #19b8df;
     border-left: 9px solid transparent;
     border-right: 9px solid transparent;
 	top:125px;
@@ -259,11 +259,11 @@ background: #ecf0f1;
 .countdown {
 text-align:center;
 }
-/*.intro{*/
+/*.intro{
 font-size:22px;
 font-weight:normal;
 margin-bottom:30px;
-}
+}*/
 .styled{
   margin-bottom: 30px;
 }

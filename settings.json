@@ -1,7 +1,6 @@
 {
   "public":{
        "ga":{
-//         google analytics tracking ID
          "id": "UA-XXXX-Y"
        }
   }

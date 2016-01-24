@@ -1,3 +1,12 @@
+Template.landing_page.onRendered(function(){
+    this.autorun(function(){
+        if(GoogleMaps.loaded()){
+            $("#landing-entry").geocomplete();
+        }
+    });
+});
+
+
 Template.landing_page.helpers({
     backstretchHelper: function(){
         $.backstretch('img/48.jpg');
