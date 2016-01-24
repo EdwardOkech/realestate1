@@ -9,9 +9,10 @@ if(Meteor.isClient){
             password: password
         }, function(error){
             if(error){
-                alert(error.reason);
+                toastr.warning(error.reason);
                 Router.go('/login');
             }else {
+                toastr.success('Your Sign-up is successful!');
                 Router.go('/home');
             }
         });
@@ -36,8 +37,9 @@ if(Meteor.isClient){
         var password = $('[name=login-password]').val();
         Meteor.loginWithPassword(email, password, function(error){
             if(error){
-                alert(error.reason);
+                toastr.warning(error.reason);
             }else {
+                toastr.success('Login succeeded!');
                 Router.go('/home');
             }
         });
