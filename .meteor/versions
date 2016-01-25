@@ -134,6 +134,7 @@ retry@1.0.4
 reywood:iron-router-ga@0.7.1
 reywood:publish-composite@1.4.2
 routepolicy@1.0.6
+sacha:spin@2.3.1
 sanjo:jasmine@0.21.0
 sanjo:karma@3.1.0
 sanjo:long-running-child-process@1.1.3

@@ -32,5 +32,10 @@ Router.map(function() {
         template: 'results',
         layoutTemplate: 'layoutMain'
     });
+    this.route('SubmitProperty', {
+        path: '/submit_property',
+        template: 'submit_property',
+        LayoutTemplate: 'layoutMain'
+    });
 
 });
