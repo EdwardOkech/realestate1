@@ -37,5 +37,10 @@ Router.map(function() {
         template: 'submit_property',
         layoutTemplate: 'layoutMain'
     });
+    this.route('SingleProperty', {
+        path: '/single_property',
+        template: 'single_property',
+        layoutTemplate: 'layoutMain'
+    });
 
 });
