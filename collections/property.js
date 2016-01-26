@@ -12,7 +12,7 @@ Schemas.Property = new SimpleSchema({
         label: "Description",
         optional: false
     },
-    address:{
+   /* address:{
         type: String,
         label: "Addresse",
          optional: false,
@@ -23,7 +23,7 @@ Schemas.Property = new SimpleSchema({
             autolocate: true
         }
 
-    },
+    },*/
     photos:{
         type: String,
         label: 'Photo',
@@ -36,7 +36,7 @@ Schemas.Property = new SimpleSchema({
     type:{
         type: String,
         label: 'Categorie',
-        allowedValues: ['Appartement', 'Villa', 'Terrain Constructible', 'Terrain Agricole'],
+        allowedValues: ['appartement', 'villa', 'terrainConstructible', 'terrainAgricole'],
          optional: false,
         autoform:{
             options: {
@@ -50,7 +50,7 @@ Schemas.Property = new SimpleSchema({
     status:{
         type: String,
         label: 'Statut',
-        allowedValues: ['Louer', 'Acheter'],
+        allowedValues: ['louer', 'acheter'],
          optional: false,
         autoform: {
             options: {
@@ -59,12 +59,45 @@ Schemas.Property = new SimpleSchema({
             }
         }
     },
-    city: {
+   /* city: {
         type: String,
         label: 'Ville',
-        allowedValues: Utils.cityList,
+        allowedValues: [
+        'Select City',
+        'Casablanca',
+        'Marrakech',
+        'Rabat',
+        'Agadir',
+        'Al Hoceima',
+        'Beni Mellal',
+        'El Jadida',
+        'Essaouira',
+        'Essmara',
+        'FËs',
+        'KÈnitra',
+        'KhÈnifra',
+        'khmissat',
+        'Khouribga',
+        'Larache',
+        'MeknËs',
+        'Mohammedia',
+        'Nador',
+        'Ouarzazate',
+        'Oujda',
+        'Safi',
+        'Settat',
+        'SalÈ',
+        'Tanger',
+        'Taza',
+        'Temara',
+        'TÈtouan',
+        'Berkane',
+        'Dakhla',
+        'Laayoune',
+        'Toutes les villes'
+  ],
          optional: false
-    },
+    },*/
     price: {
         type: Number,
         label: 'Prix',
@@ -100,6 +133,11 @@ Schemas.Property = new SimpleSchema({
         type: String,
         label: 'Climatisation',
         defaultValue: false,
+        optional: true
+    },
+    agent: {
+        type: String,
+        label: 'Agent/Agency',
         optional: true
     }
 });

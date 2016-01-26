@@ -45,4 +45,22 @@ if(Meteor.isClient){
         });
     }
     });
+    Template.login.events({
+        'click #login-button-fb': function(event){
+            Meteor.loginWithFacebook({}, function(error){
+                if(error){
+                    toastr.error('Facebook login failed');
+                }
+            });
+        }
+    });
+    Template.login.events({
+        'click #login-button-gl': function(event){
+            Meteor.loginWithGoogle({}, function(error){
+                if(error){
+                    toastr.error('Google login failed');
+                }
+            });
+        }
+    });
 }

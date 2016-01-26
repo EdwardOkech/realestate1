@@ -4,5 +4,9 @@
 
          "id": "UA-XXXX-Y"
        }
-  }
+  },
+  "AWSAccessKeyId": "AKIAJHMCIW2LPX73AZDA",
+  "AWSSecretAccessKey": "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 ",
+  "AWSBucket": "altannoncesdev"
+
 }
