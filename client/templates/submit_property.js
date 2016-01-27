@@ -1,5 +1,6 @@
-/* Template.submit_property.helpers({
-    geoHelper: function(){
+Template.submit_property.helpers({
+    mappingHelpers: function(){
+
         var options = {
           map: ".map_canvas"
         };
@@ -24,4 +25,4 @@
           return false;
         });
     }
-}) */
+});

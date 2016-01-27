@@ -96,23 +96,45 @@
                                         {{#autoForm collection="Properties" id="property_submit_form" type="insert"}}
                                 <fieldset>
                                     {{> afQuickField name="title" id="title" placeholder="Title"}}
-                                    {{> afQuickField name="address" id="geocomplete"  placeholder="Type in an address"}}
-                                    <input id="find" type="button" class="btn btn-primary" value="Find Address" />
+
                                     {{> afQuickField name="description" id="description" rows=6 }}
                                     {{> afQuickField name="type" id="type"}}
                                     {{> afQuickField name="status" id="status"}}
                                     {{> afQuickField name="city" id="country"}}
-                                    {{> afQuickField name="price" }}
                                     {{> afQuickField name="bedrooms" }}
                                     {{> afQuickField name="bathrooms" }}
                                     {{> afQuickField name="parking" }}
-                                    {{> afQuickField name="furnished" }}
-                                    {{> afQuickField name="airConditioning" }}
-                                    {{> afQuickField name="photos"  type="file"}}
+                                    {{> afQuickField name="furnished" type="boolean-checkbox" }}
+                                    {{> afQuickField name="airConditioning"  type="boolean-checkbox" }}
+                                    <hr>
+                                    <div class="row clearfix">
+                                        <div class="col-lg-12 col-md-12 col-lg-sm-12">
+                                            <div class="input-group">
 
-                                </fieldset>
-                                <div class="map_canvas"></div>
+                                                 {{> afQuickField name="price" }}
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <hr>
+                                    <div class="fileupload fileupload-new" data-provides="fileupload">
+                                        <div class="fileupload-preview thumbnail"></div>
+                                    </div>
+                                    <div>
+
+
+                                            {{> afQuickField name="photos"  type="file"}}
+
+                                    </div>
+                                    <div class="clearfix"></div>
+
                                         <hr>
+                                    {{> afQuickField name="address" id="geocomplete"  placeholder="Type in an address"}}
+                                    <input id="find" type="button" class="btn btn-primary" value="Find Address" />
+                                    <div class="map_canvas"></div>
+                                        <hr>
+                                </fieldset>
                                 <button type="submit" class="btn btn-primary">SEND DETAILS</button>
                            {{/autoForm }}
 						</div><!-- end property_wrapper -->
@@ -182,6 +204,8 @@
                 </div><!-- end row -->
             </div><!-- end container -->
         </section>
+     <script src="js/jquery.geocomplete.js"></script>
+     <script src="js/logger.js"></script>
        <script>
            $(function(){
 
