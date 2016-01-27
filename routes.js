@@ -25,7 +25,8 @@ Router.map(function() {
     this.route('LandingPage',{
         path: '/',
         template: 'landing_page',
-        layoutTemplate: 'layoutLanding'
+        layoutTemplate: 'layoutLanding',
+
     });
     this.route('Results',{
         path: '/results',
@@ -44,3 +45,12 @@ Router.map(function() {
     });
 
 });
+
+
+        //onBeforeAction: function() {
+        //    GoogleMaps.load({
+        //        key: '',
+        //        librarie: 'places'
+        //    });
+        //    this.next();
+        //}

@@ -12,18 +12,12 @@ Schemas.Property = new SimpleSchema({
         label: "Description",
         optional: false
     },
-   /* address:{
+   address:{
         type: String,
-        label: "Addresse",
-         optional: false,
-        autoform:{
-            type: 'map',
-            geolocation: true,
-            searchBox: true,
-            autolocate: true
-        }
+        label: 'Addrese',
+        optional: false
 
-    },*/
+    },
     photos:{
         type: String,
         label: 'Photo',
@@ -59,45 +53,7 @@ Schemas.Property = new SimpleSchema({
             }
         }
     },
-   /* city: {
-        type: String,
-        label: 'Ville',
-        allowedValues: [
-        'Select City',
-        'Casablanca',
-        'Marrakech',
-        'Rabat',
-        'Agadir',
-        'Al Hoceima',
-        'Beni Mellal',
-        'El Jadida',
-        'Essaouira',
-        'Essmara',
-        'FËs',
-        'KÈnitra',
-        'KhÈnifra',
-        'khmissat',
-        'Khouribga',
-        'Larache',
-        'MeknËs',
-        'Mohammedia',
-        'Nador',
-        'Ouarzazate',
-        'Oujda',
-        'Safi',
-        'Settat',
-        'SalÈ',
-        'Tanger',
-        'Taza',
-        'Temara',
-        'TÈtouan',
-        'Berkane',
-        'Dakhla',
-        'Laayoune',
-        'Toutes les villes'
-  ],
-         optional: false
-    },*/
+
     price: {
         type: Number,
         label: 'Prix',
@@ -126,20 +82,22 @@ Schemas.Property = new SimpleSchema({
     furnished: {
         type: String,
         label: 'Meuble/Non Meuble',
-        defaultValue: false,
-        optional: true
+        optional: true,
+        autoform: {
+            type: "select-checkbox",
+
+        }
     },
     airConditioning: {
         type: String,
         label: 'Climatisation',
-        defaultValue: false,
-        optional: true
-    },
-    agent: {
-        type: String,
-        label: 'Agent/Agency',
-        optional: true
+        optional: true,
+        autoform: {
+            type: "select-checkbox",
+
+        }
     }
+
 });
 
 Properties.attachSchema(Schemas.Property);
