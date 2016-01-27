@@ -25,7 +25,8 @@ Router.map(function() {
     this.route('LandingPage',{
         path: '/',
         template: 'landing_page',
-        layoutTemplate: 'layoutLanding'
+        layoutTemplate: 'layoutLanding',
+
     });
     this.route('Results',{
         path: '/results',
@@ -37,5 +38,19 @@ Router.map(function() {
         template: 'submit_property',
         layoutTemplate: 'layoutMain'
     });
+    this.route('SingleProperty', {
+        path: '/single_property',
+        template: 'single_property',
+        layoutTemplate: 'layoutMain'
+    });
 
 });
+
+
+        //onBeforeAction: function() {
+        //    GoogleMaps.load({
+        //        key: '',
+        //        librarie: 'places'
+        //    });
+        //    this.next();
+        //}
