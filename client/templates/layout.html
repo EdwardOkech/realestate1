@@ -1,4 +1,4 @@
-<template name="layoutMain" xmlns="http://www.w3.org/1999/html">
+<template name="layoutMain">
     <header>
         <header class="header1">
             {{> navbar }}
@@ -59,8 +59,9 @@
 
                     <div></div>
 
-                    <p><input name="" placeholder="Entrer une ville au Maroc" type="text" id="landing-entry"/>
-                        <a href="/results"> <input type="submit" id="main" value="Search"/></a>
+                    <p><!--<input name="" placeholder="Entrer une ville au Maroc" type="text" id="landing-entry"/>
+                        <a href="/results"> <input type="submit" id="main" value="Search"/></a>-->
+                        {{> inputAutoComplete cityHelper=cityHelper id="landing-entry" placeholder="Entrer une ville au Maroc" }}
                     </p>
                 </form>
             </div>
