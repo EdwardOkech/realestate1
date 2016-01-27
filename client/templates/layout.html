@@ -69,7 +69,8 @@
         <div id="overlay"></div>
         <script type="text/javascript" src="/client/lib/Backstretch.js"></script>
         <script type="text/javascript" src="/client/lib/global.js"></script>
-
+        <script src="js/jquery.geocomplete.js"></script>
+        <script src="js/logger.js"></script>
 
 
         <script>
@@ -109,6 +110,19 @@
 
 
         </script>
+
+        <script>
+         $(function(){
+             $("#landing-entry").geocomplete({
+               map: ".map_canvas",
+               details: "form",
+               types: ["geocode", "establishment"],
+            });
+           $("#find").click(function(){
+          $("#landing-entry").trigger("geocode");
+           });
+      });
+    </script>
 
     </main>
 </template>
