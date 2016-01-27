@@ -1,7 +1,15 @@
-{
-  "public":{
-       "ga":{
-         "id": "UA-XXXX-Y"
-       }
-  }
+{ 
+
+	"environment": "dev",
+	
+	"public":{
+		"ga":{
+			"id": "UA-57310612-4"
+		}
+	},
+
+	"AWSAccessKeyId": "AKIAJHMCIW2LPX73AZDA",
+	"AWSSecretAccessKey": "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 ",
+	"AWSBucket": "altannoncesdev"
+
 }

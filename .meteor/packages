@@ -41,9 +41,18 @@ reywood:iron-router-ga
 spiderable
 gadicohen:sitemaps
 goltfisch:jquery-backstretch
-mrt:iron-router-progress
-multiply:iron-router-progress
+# multiply:iron-router-progress
 sebdah:autocompletion
 momentjs:moment
 sanjo:jasmine
 yogiben:admin
+gwendall:simple-schema-i18n
+cfs:standard-packages
+cfs:s3
+cfs:gridfs
+aldeed:autoform
+chrismbeckett:toastr
+msavin:mongol
+aldeed:collection2
+sacha:spin
+service-configuration

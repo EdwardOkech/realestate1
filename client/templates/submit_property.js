@@ -1,15 +1,10 @@
-<template name="landing_page">
-  {{> layoutLanding }}
-    <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
-    <script src="js/jquery.geocomplete.js"></script>
-    <script>
-      $(function(){
-
+/* Template.submit_property.helpers({
+    geoHelper: function(){
         var options = {
           map: ".map_canvas"
         };
 
-        $("#landing-entry").geocomplete(options)
+        $("#geocomplete").geocomplete(options)
           .bind("geocode:result", function(event, result){
             $.log("Result: " + result.formatted_address);
           })
@@ -20,15 +15,13 @@
             $.log("Multiple: " + results.length + " results found");
           });
 
-        $("#main").click(function(){
-          $("#landing-entry").trigger("geocode");
+        $("#find").click(function(){
+          $("#geocomplete").trigger("geocode");
         });
 
         $("#examples a").click(function(){
-          $("#landing-entry").val($(this).text()).trigger("geocode");
+          $("#geocomplete").val($(this).text()).trigger("geocode");
           return false;
         });
-
-      });
-    </script>
-</template>
+    }
+}) */
