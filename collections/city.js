@@ -19,7 +19,7 @@ if(Cities.find().count() === 0){
     console.log('Importing private/cities.json to db');
 
     Assets.getText('cities.json', function(err, data){
-        var data = EJSON.parse(data);
+        var data = JSON.parse(data);
 
         for(city in data){
             console.log('inserting', city);
