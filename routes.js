@@ -44,13 +44,8 @@ Router.map(function() {
         layoutTemplate: 'layoutMain'
     });
 
+
 });
 
 
-        //onBeforeAction: function() {
-        //    GoogleMaps.load({
-        //        key: '',
-        //        librarie: 'places'
-        //    });
-        //    this.next();
-        //}
+
