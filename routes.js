@@ -43,6 +43,17 @@ Router.map(function() {
         template: 'single_property',
         layoutTemplate: 'layoutMain'
     });
+    this.route('Sitemap', {
+        path: '/sitemap.xml',
+        where: 'server',
+
+
+        action: function(){
+            var collectionOfPages = YourWebsitePages.find(
+
+            )
+        }
+    });
 
 
 });
