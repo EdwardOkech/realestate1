@@ -66,6 +66,8 @@ es5-shim@4.1.14
 facebook@1.2.2
 fastclick@1.0.7
 fortawesome:fontawesome@4.5.0
+gadicohen:robots-txt@0.0.10
+gadicohen:sitemaps@0.0.23
 geojson-utils@1.0.4
 goltfisch:jquery-backstretch@0.2.0
 google@1.1.7
@@ -87,7 +89,6 @@ iron:url@1.0.11
 jeremy:geocomplete@1.6.5_9
 johannesma:meteor-flexslider@0.0.1
 jquery@1.11.4
-krstffr:sitemap-creator@0.0.4
 lai:collection-extensions@0.1.4
 launch-screen@1.0.4
 less@2.5.1
@@ -151,6 +152,7 @@ session@1.1.1
 sha@1.0.4
 spacebars@1.0.7
 spacebars-compiler@1.0.7
+spiderable@1.0.9
 srp@1.0.4
 standard-app-packages@1.0.6
 standard-minifiers@1.0.2

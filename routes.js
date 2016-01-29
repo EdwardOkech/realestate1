@@ -43,39 +43,7 @@ Router.map(function() {
         template: 'single_property',
         layoutTemplate: 'layoutMain'
     });
-    this.route('Sitemap', {
-        path: '/sitemap.xml',
-        where: 'server',
 
-
-        action: function () {
-
-
-        var collectionOfPages = Pages.find(
-            { status: "live" },
-            { fields: { url: 1, updatedDate: 1, sitemapPrio: 1 } }
-            ).fetch();
-
-        var collectionForXMLcreation = _( collectionOfPages ).map( function ( page ) {
-
-            return {
-                loc: page.url,
-                lastmod: new Date( page.updatedDate ),
-                priority: page.sitemapPrio,
-                changefreq: 'monthly'
-            };
-        });
-
-
-        var xmlSitemap = SitemapCreator.createXMLSitemap( collectionForXMLcreation, 'http://0.0.0.0:3000/' );
-
-
-        this.response.writeHead(200, {'Content-Type': 'text/xml'});
-        this.response.end( xmlSitemap );
-
-    }
-
-    });
 
 
 });

@@ -38,8 +38,8 @@ accounts-base
 accounts-facebook
 accounts-google
 reywood:iron-router-ga
-#spiderable
-#gadicohen:sitemaps
+spiderable
+gadicohen:sitemaps
 goltfisch:jquery-backstretch
 # multiply:iron-router-progress
 sebdah:autocompletion
@@ -64,4 +64,3 @@ dburles:collection-helpers
 alanning:roles
 velocity:html-reporter
 txgruppi:simple-i18n
-krstffr:sitemap-creator
