@@ -22,12 +22,34 @@
 </template>
 
 <template name="layoutLanding">
+
     <header>
+
         <title>Real Estate</title>
         <link rel="stylesheet" type="text/css" class="" href="/css/bootstrap.css">
 
     </header>
+
     <main>
+
+        <div class="landingHeader">
+            
+            <div class="container">
+                
+                <div class="menuLogo">Altannonces</div>
+                <div class="menuItem">Acheter</div>
+                <div class="menuItem">Louer</div>
+                <div class="menuItem">Contact</div>
+
+                <div class="rightMenuItems">
+                    <div class="rightMenuItem votreAnnonce">Votre Annonce!</div>
+                    <div class="rightMenuItem connexion">Connexion</div>
+                </div>
+
+            </div>
+
+        </div>
+
         <div id="Header">
             <div class="wrapper">
 
@@ -60,7 +82,7 @@
                     <div></div>
 
                     <p>
-                        <input name="" placeholder="Entrer une ville au Maroc" type="text" id="landing-entry"/>
+                        <input name="" placeholder="Entrer une ville au Maroc" type="text" id="landing-entry" autocomplete="off"/>
                         <a href="/results"> <input type="submit" id="main" value="Search"/></a>
 
                     </p>
