@@ -22,6 +22,10 @@ body {
 	filter: dropshadow(color=#000000, offx=0, offy=1);	
 }
 
+#velocityOverlay {
+	display: none;
+}
+
 #bg {
   position: fixed;
   top: -50%;
