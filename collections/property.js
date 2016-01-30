@@ -35,7 +35,7 @@ Schemas.Property = new SimpleSchema({
         autoform:{
             options: {
                 appartement: 'Appartement',
-                villa: 'villa',
+                villa: 'Villa',
                 terrainConstructible: 'Terrain Constructible',
                 terrainAgricole: 'Terrain Agricole'
             }
@@ -62,7 +62,7 @@ Schemas.Property = new SimpleSchema({
     },
     bedrooms: {
         type: Number,
-        label: 'pieces',
+        label: 'Pieces',
         defaultValue: 0,
         optional: false
 
