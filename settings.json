@@ -1,14 +1,26 @@
-{ "environment": "dev",
-  "public":{
-       "ga":{
+{ 
 
-         "id": "UA-XXXX-Y"
-       }
-  },
-  "AWSAccessKeyId": "AKIAJHMCIW2LPX73AZDA",
-  "AWSSecretAccessKey": "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 ",
-  "AWSBucket": "altannoncesdev",
-  "GOOGLE_MAP_API": "AIzaSyBvB9v2e9LTPuJYaRTN7pc8zIStdzvaFxg"
+	"environment": "dev",
+	
+	"public":{
+		"ga":{
+			"id": "UA-57310612-4"
+		}
+	},
 
+	"AWSAccessKeyId": "AKIAJHMCIW2LPX73AZDA",
+	"AWSSecretAccessKey": "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",
+	"AWSBucket": "altannoncesdev",
+
+	"GOOGLE_MAP_API": "AIzaSyBvB9v2e9LTPuJYaRTN7pc8zIStdzvaFxg",
+  "MAIL_URL": [
+	         {
+				"Host": "smtp.mandrillapp.com",
+				"Port": "587 ",
+				"Username": "info@blomit.co.za",
+				"Password": "A4mJluKTZKXIaXob_BcRrg",
+				"from": "altannonces@react.technology"
+	          }
+           ]
 
 }
