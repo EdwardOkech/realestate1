@@ -26,3 +26,4 @@ Template.submit_property.helpers({
         });
     }
 });
+
