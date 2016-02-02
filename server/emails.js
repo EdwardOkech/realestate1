@@ -1,14 +1,7 @@
 Meteor.methods({
-    sendEmail: function(to, from, subject, text){
-        check([to, from, subject, text]);
-
-        this.unblock();
-
-        Email.send({
-            to:to,
-            from: from,
-            subject: subject,
-            text: text
-        });
+    sendEmail: function(userId, email){
+        if(this.userId == userId){
+            Email.send(email);
+        }
     }
 });
