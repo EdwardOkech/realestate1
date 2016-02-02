@@ -96,6 +96,20 @@ Schemas.Property = new SimpleSchema({
             type: "select-checkbox",
 
         }
+    },
+    propertyWorkflowStatus:{
+        type:String,
+        allowedValues: ['pending', 'approved', 'rejected', 'expired'],
+        optional: true,
+        autoform: {
+            options: {
+                pending:'Pending',
+                approved: 'Approved',
+                rejected: 'Rejected',
+                expired: 'Expired'
+            },
+            defaultValue: 'Pending'
+        }
     }
 
 });
