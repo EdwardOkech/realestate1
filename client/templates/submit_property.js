@@ -27,3 +27,15 @@ Template.submit_property.helpers({
     }
 });
 
+Template.submit_property.events({
+    'click #sub_property': function(event){
+        //var userEmail = $('[name=login-email]').val();
+        Meteor.call('sendEmail',
+            'okechjobs@gmail.com',
+            'altannonces@react.technology',
+            'Hello Edward',
+            'Test mail...Echo 123'
+        );
+    }
+
+});
