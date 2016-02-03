@@ -118,6 +118,30 @@
 
 }
 
+.menu3 {
+	display: inline-block;
+	font-size: 15px;
+	color: rgba(0, 0, 0, 0.6);
+	font-weight: bold;
+	position: relative;
+	top: 10px;
+	padding: 0 15px;
+	height: 50px;
+	line-height: 44px;
+	vertical-align: middle;
+	/*border-top: 0 solid #19B8DF;*/
+	/*box-sizing: border-box;*/
+	cursor: pointer;
+
+}
+
+.menu3:before{
+	content: "|";
+	color: lightgrey;
+	padding-right: 10px;
+	height: 100%;
+}
+
 .menu2 .fa-search {
   position: absolute;
   top: 9px;
