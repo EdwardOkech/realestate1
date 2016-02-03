@@ -43,6 +43,14 @@ Router.map(function() {
         template: 'single_property',
         layoutTemplate: 'layoutMain'
     });
+    this.route('Acheter', {
+        path: '/acheter/:_id',
+        template: 'acheter',
+        layoutTemplate: 'layoutMain',
+        data: function(){
+            return Cities.findOne({_id: this.params._id});
+        }
+    })
 
 
 

@@ -1,8 +1,5 @@
-/* Template.results.onRendered(function(){
-    this.autorun(function(){
-        if(GoogleMaps.loaded()){
-            $("input").geocomplete();
-        }
-    });
-});
-*/
+Template.results.events({
+    'click #pro-search': function(){
+        Router.go('/acheter/:_id');
+    }
+})

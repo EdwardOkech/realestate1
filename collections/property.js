@@ -96,7 +96,20 @@ Schemas.Property = new SimpleSchema({
             type: "select-checkbox",
 
         }
-    }
+    },
+    //workflow:{
+    //    type: [String],
+    //    allowedValues: ['approved','declined','submitted','expires'],
+    //    autoValue: function(){
+    //        STATUS = ['approved','declined','submitted','expires'];
+    //        for(var i=0;i<=STATUS.length;i++){
+    //            if(this.insert(i)){
+    //                return this.i;
+    //            }
+    //
+    //        }
+    //    }
+    //}
 
 });
 
