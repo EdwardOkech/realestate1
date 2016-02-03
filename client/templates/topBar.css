@@ -118,3 +118,11 @@
 
 }
 
+.menu2 .fa-search {
+  position: absolute;
+  top: 9px;
+  left: 600px;
+  font-size: 15px;
+	color: #19B8DF;
+}
+
