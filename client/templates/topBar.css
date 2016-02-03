@@ -1,0 +1,75 @@
+.landingHeader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 200000;
+
+	border-bottom: 1px solid #CCC;
+	background-color: #ffffff;
+	color: #777777;
+	height: 50px;
+	font-size: 0;
+}
+
+.landingHeader .container {
+	position: relative;
+}
+
+.menuLogo {
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	font-size: 18px;
+	margin-right: 20px;
+}
+
+.menuItem {
+	display: inline-block;
+	font-size: 15px;
+	position: relative;
+	top: -1px;
+	padding: 0 15px;
+	height: 50px;
+	line-height: 44px;
+	border-top: 3px solid #FFF;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.menuItem:hover {
+	border-top: 3px solid #0094bd;
+}
+
+.rightMenuItems {
+	position: absolute;
+	top: 11px;
+	right: 10px;
+	bottom: 0;
+}
+
+.rightMenuItem {
+	display: inline-block;
+	margin-left: 10px;
+	padding: 4px 12px;
+	font-size: 14px;
+	color: #FFF;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.votreAnnonce {
+	background-color: #ecaa03;
+}
+
+.votreAnnonce:hover {
+	background-color: #c48d02;
+}
+
+.connexion {
+	background-color: #0094bd;
+}
+
+.connexion:hover {
+	background-color: #007494;
+}

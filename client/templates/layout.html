@@ -22,12 +22,18 @@
 </template>
 
 <template name="layoutLanding">
+
     <header>
+
         <title>Real Estate</title>
         <link rel="stylesheet" type="text/css" class="" href="/css/bootstrap.css">
 
     </header>
+
     <main>
+
+        {{> topBar}}
+
         <div id="Header">
             <div class="wrapper">
 
@@ -60,8 +66,7 @@
                     <div></div>
 
                     <p>
-
-                        <input name="" placeholder="Entrer une ville au Maroc" type="text" id="landing-entry"/>
+                        <input name="" placeholder="Entrer une ville au Maroc" type="text" id="landing-entry" autocomplete="off"/>
                         <a href="/results"> <input type="submit" id="main" value="Search"/></a>
 
                     </p>
