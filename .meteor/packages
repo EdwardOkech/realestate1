@@ -63,4 +63,4 @@ mrt:accounts-admin-ui-bootstrap-3
 dburles:collection-helpers
 alanning:roles
 velocity:html-reporter
-txgruppi:simple-i18n
+gadicohen:messageformat

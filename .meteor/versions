@@ -66,6 +66,8 @@ es5-shim@4.1.14
 facebook@1.2.2
 fastclick@1.0.7
 fortawesome:fontawesome@4.5.0
+gadicohen:headers@0.0.31
+gadicohen:messageformat@0.0.53
 gadicohen:robots-txt@0.0.10
 gadicohen:sitemaps@0.0.23
 geojson-utils@1.0.4
@@ -99,6 +101,7 @@ luisalmeida:unveil@0.0.1
 meteor@1.1.10
 meteor-base@1.0.1
 meteor-platform@1.2.3
+meteorhacks:inject-initial@1.0.3
 meteorhacks:meteorx@1.0.2
 meteorhacks:unblock@1.1.0
 meteortoys:toykit@2.2.1
@@ -162,7 +165,6 @@ templating-tools@1.0.0
 tracker@1.0.9
 tsega:skrollr@0.0.2
 twbs:bootstrap@3.3.6
-txgruppi:simple-i18n@0.4.1
 ui@1.0.8
 underscore@1.0.4
 url@1.0.5

@@ -7,11 +7,12 @@
 			"id": "UA-57310612-4"
 		}
 	},
-
+  "S3.config":{
 	"AWSAccessKeyId": "AKIAJHMCIW2LPX73AZDA",
 	"AWSSecretAccessKey": "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",
-	"AWSBucket": "altannoncesdev",
+	"AWSBucket": "altannoncesdev"
+  },
 
-	"GOOGLE_MAP_API": "AIzaSyBvB9v2e9LTPuJYaRTN7pc8zIStdzvaFxg"
+  "GOOGLE_MAP_API": "AIzaSyBvB9v2e9LTPuJYaRTN7pc8zIStdzvaFxg"
 
 }
