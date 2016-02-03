@@ -6,7 +6,7 @@ Template.topBar.onRendered({
 });
 
 Template.topBar.events({
-    'keyup input#landing-entry' : function(){
+    'keyup input#filter-entry' : function(){
         AutoCompletion.autocomplete({
             element: 'input#filter-entry',
             collection: Cities,
