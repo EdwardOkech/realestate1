@@ -11,32 +11,48 @@ Router.map(function() {
     this.route('Home', {
         path: '/home',
         template: 'home',
-        layoutTemplate: 'layoutMain'
+        layoutTemplate: 'layoutMain',
 
-        //onBeforeAction: function(pause){
-        //    this.render('landing_page');
-        //}
+        onAfterAction: function(){
+            document.title = 'Altannonces | Home';
+        }
     });
     this.route('Login', {
         path: '/login',
         template: 'login',
-        layoutTemplate: 'layoutMain'
+        layoutTemplate: 'layoutMain',
+
+        onAfterAction: function(){
+            document.title = 'Altannonces | Login';
+        }
     });
     this.route('LandingPage',{
         path: '/',
         template: 'landing_page',
         layoutTemplate: 'layoutLanding',
 
+        onAfterAction: function(){
+            document.title = 'Altannonces | Welcome';
+        }
+
     });
     this.route('Results',{
         path: '/results',
         template: 'results',
-        layoutTemplate: 'layoutMain'
+        layoutTemplate: 'layoutMain',
+
+        onAfterAction: function(){
+            document.title = 'Altannonces | Results';
+        }
     });
     this.route('SubmitProperty', {
         path: '/submit_property',
         template: 'submit_property',
-        layoutTemplate: 'layoutMain'
+        layoutTemplate: 'layoutMain',
+
+        onAfterAction: function(){
+            document.title = 'Altannonces | Submit Property';
+        }
     });
     this.route('SingleProperty', {
         path: '/single_property',
