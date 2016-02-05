@@ -44,7 +44,6 @@ goltfisch:jquery-backstretch
 sebdah:autocompletion
 momentjs:moment
 sanjo:jasmine
-yogiben:admin
 gwendall:simple-schema-i18n
 cfs:standard-packages
 cfs:s3
@@ -68,3 +67,4 @@ meteorhacks:ssr
 
 
 npm-container
+houston:admin
