@@ -1,10 +1,104 @@
 {
   /*Config*/
+  "config_name": " ",
+  "config_title": " ",
+  "config_sub": " ",
+
+
+
+  /*landing_page*/
+  "search": " ",
+
+  /*filtering_form*/
+  "listing":"",
+  "any_price": " ",
+  "home": " ",
 
   /*Home*/
+  "title_row1": "",
+  "first_title_col1": " ",
+  "first_title_col2": " ",
+  "first_title_col3": " ",
+  "first_title_col4": "  ",
+  "title_row2": " ",
+  "title_sub_row2": " ",
+  "title_row3": " ",
+  "title_sub_row3": " ",
+  "recent_prop_vid": " ",
+  "recent_prop_sub_vid": " ",
+  "news_updates": " ",
+  "news_updates_sub":" ",
+  "news_updates_read_more_btn": " ",
+  "agency_row":" ",
+  "agency_sub":" ",
+  "agency_about_btn": " ",
+  "agency_properties":" ",
+  "view_all_agencies": " ",
+  "view_all_properties": " ",
+
+  /*Submit_Properties*/
+  "form_title": " ",
+  "form_title_sub": " ",
+  "search_field_title": " ",
+  "search_field_placeholder":" ",
+  "browse_btn":" ",
+  "send_btn": " ",
+
+  /*login&registration*/
+  "login_title": " ",
+  "login_email_placeholder": " ",
+  "login_pass_placeholder": " ",
+  "login_btn":" ",
+  "register_form_title":" ",
+  "reg_full_names_placeholder": " ",
+  "reg_username_placeholder": " ",
+  "reg_email_placeholder": " ",
+  "reg_pass_placeholder": " ",
+  "reg_btn": " ",
+
+  /*side_bar_left*/
+
+  "banner_ads": " ",
+  "site_links": " ",
+  "for_sale": " ",
+  "for_rent" : " ",
+
+  /*side_bar_right*/
+  "our_agents": " ",
+
+  /*propert_page*/
+  "type":" ",
+  "area":" ",
+  "garage":" ",
+  "bed":" ",
+  "baths":" ",
+  "aircondition":" ",
+  "property_map": " ",
+  "map_sub": " ",
+  "status_pend":" ",
+  "status_experied":" ",
+  "status_approved":" ",
+  
+  /*email_template*/
+  "on_sent_msg": " ",
+  
+  /*admin*/
+  
+  "status_pend":" ",
+  "status_experied":" ",
+  "status_approved":" ",
+  "approve_btn":" ",
+  "deny_btn":" ",
+
 
   /*Footer*/
-  "site_links": "Liens du site",
-  "about_estate": "sur la planification",
-  "twitter_stream": "Twitter Niveau"
+  "site_links": " ",
+  "about_estate":" ",
+  "twitter_stream": " ",
+  "support":" ",
+  "get_in_touch": " ",
+  "about": " ",
+  "terms": " ",
+  "copyright": " ",
+  "join": " "
 }

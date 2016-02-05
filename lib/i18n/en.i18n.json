@@ -1,10 +1,104 @@
 {
   /*Config*/
+  "config_name": "My App",
+  "config_title": "Real Estate App",
+  "config_sub": "Real Estate App for Morocco ......",
+
+
+
+  /*landing_page*/
+  "search": "Search",
+
+  /*filtering_form*/
+  "listing":"Listing Type",
+  "any_price": "Any Price",
+  "home": "Home Type",
 
   /*Home*/
+  "title_row1": "To Attain Your Dream Home",
+  "first_title_col1": "List On The Same Day",
+  "first_title_col2": "Detailed Agent Panel",
+  "first_title_col3": "Easy To Use",
+  "first_title_col4": "Sell & Make Money Online",
+  "title_row2": "Most Popular Properties",
+  "title_sub_row2": "This Week's Most Admired Properties",
+  "title_row3": "Testimonials",
+  "title_sub_row3": "Hundred Thousand Happy Customers Over 5 Years",
+  "recent_prop_vid": "Recent Properties",
+  "recent_prop_sub_vid": "Handpicked Properties For You",
+  "news_updates": "News & Updates",
+  "news_updates_sub":"The Most Popular Real Estate News",
+  "news_updates_read_more_btn": "Read More",
+  "agency_row":"Agencies",
+  "agency_sub":"Some Real Estate Agencies Working With Us",
+  "agency_about_btn": "About Agencie",
+  "agency_properties":"Assigned Properties",
+  "view_all_agencies": "View All Agencies",
+  "view_all_properties": "View All Properties",
+
+  /*Submit_Properties*/
+  "form_title": "List Property Form",
+  "form_title_sub": "You Can Submit Your Property",
+  "search_field_title": "Search For Property",
+  "search_field_placeholder": "Search by ID or Property name...",
+  "browse_btn": "Browse",
+  "send_btn": "Send Details",
+
+  /*login&registration*/
+  "login_title": "Login Form",
+  "login_email_placeholder": "Email",
+  "login_pass_placeholder": "Password",
+  "login_btn": "Sign In",
+  "register_form_title": "Register Form",
+  "reg_full_names_placeholder": "Full Names",
+  "reg_username_placeholder": "Username",
+  "reg_email_placeholder": "Email",
+  "reg_pass_placeholder": "Password",
+  "reg_btn": "Register An Account",
+
+  /*side_bar_left*/
+
+  "banner_ads": "Banner Ads",
+  "site_links": "Site Links",
+  "for_sale": "For Sale",
+  "for_rent" :" For Rent",
+
+  /*side_bar_right*/
+  "our_agents": "Our Agents",
+
+  /*propert_page*/
+  "type":"Type",
+  "area":"Area",
+  "garage":"Garage",
+  "bed":"Bed",
+  "baths":"Baths",
+  "aircondition":"Air condition",
+  "property_map": "Property Map",
+  "map_sub": "See The Address Of The House On The Map",
+  "status_pend":"Pending",
+  "status_experied":"Expired",
+  "status_approved":"Approved",
+
+  /*email_template*/
+  "on_sent_msg": "Thanks, you ad is been reviewed!",
+
+  /*admin*/
+
+  "status_pend":"Pending",
+  "status_experied":"Expired",
+  "status_approved":"Approved",
+  "approve_btn":"Approve",
+  "deny_btn":"Deny",
+
 
   /*Footer*/
   "site_links": "Site Links",
   "about_estate": "About Estate",
-  "twitter_stream": "Twitter Stream"
+  "twitter_stream": "Twitter Stream",
+  "support":"Support",
+  "get_in_touch": "Get In Touch",
+  "about": "About",
+  "terms": "Terms Of Use",
+  "copyright": "Copyright",
+  "join": "Join Us"
 }
