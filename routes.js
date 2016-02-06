@@ -50,6 +50,14 @@ Router.map(function() {
         template: 'submit_property',
         layoutTemplate: 'layoutMain',
 
+        onBeforeAction: function(){
+            if(!Meteor.user()){
+                this.render('/login');
+            }
+
+        },
+
+
         onAfterAction: function(){
             document.title = 'Altannonces | Submit Property';
         }
@@ -60,7 +68,7 @@ Router.map(function() {
         layoutTemplate: 'layoutMain'
     });
     this.route('Acheter', {
-        path: '/acheter/:_id',
+        path: '/acheter/:{_id}',
         template: 'acheter',
         layoutTemplate: 'layoutMain',
         data: function(){
