@@ -53,6 +53,12 @@ Schemas.Property = new SimpleSchema({
             }
         }
     },
+    city: {
+        type:Schema.City,
+        label: 'Ville',
+        optional: false
+
+    },
 
     price: {
         type: Number,
