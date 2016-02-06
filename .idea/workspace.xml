@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6f13927b-130b-41c1-af62-0d6c7ab350e7" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/templates/loading.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/templates/agencies.html" afterPath="$PROJECT_DIR$/client/templates/adsList.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/home.html" afterPath="$PROJECT_DIR$/client/templates/home.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collections/property.js" afterPath="$PROJECT_DIR$/collections/property.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/publications.js" afterPath="$PROJECT_DIR$/server/publications.js" />
@@ -654,7 +653,13 @@
       <option name="project" value="LOCAL" />
       <updated>1454784102948</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Refactored agencies template to adsList">
+      <created>1454784159255</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1454784159255</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -729,7 +734,8 @@
     <MESSAGE value="Removed the filtering container from the results view" />
     <MESSAGE value="minor changes" />
     <MESSAGE value="Moved acheter and louer templates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved acheter and louer templates" />
+    <MESSAGE value="Refactored agencies template to adsList" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored agencies template to adsList" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
