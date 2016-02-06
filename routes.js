@@ -55,10 +55,12 @@ Router.map(function() {
         layoutTemplate: 'layoutMain',
 
         onBeforeAction: function(){
-            if(!Meteor.user()){
+            if(!Meteor.userId()){
                 this.render('/login');
+            } else {
+                this.next();
             }
-        
+
         },
 
 
