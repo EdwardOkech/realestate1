@@ -54,12 +54,12 @@ Router.map(function() {
         template: 'submit_property',
         layoutTemplate: 'layoutMain',
 
-        //onBeforeAction: function(){
-        //    if(!Meteor.user()){
-        //        this.render('/login');
-        //    }
-        //
-        //},
+        onBeforeAction: function(){
+            if(!Meteor.user()){
+                this.render('/login');
+            }
+        
+        },
 
 
         onAfterAction: function(){
