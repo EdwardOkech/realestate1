@@ -5,3 +5,7 @@ Meteor.publish('cities', function(){
 Meteor.publish('properties', function(){
     return Properties.find({_id:propertyId});
 });
+
+Meteor.publish('tweets', function(){
+    return Tweets.find();
+});
