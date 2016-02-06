@@ -54,7 +54,7 @@ Schemas.Property = new SimpleSchema({
         }
     },
     city: {
-        type:Schema.City,
+        type:Schemas.City.name,
         label: 'Ville',
         optional: false
 
