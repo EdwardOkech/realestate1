@@ -1,10 +1,132 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+<template name="contact">
+    <section class="clearfix dm-shadow">
+        	<div class="map">
+				<div id="map"></div>
+			</div><!-- end map -->
+        </section><!-- clearfix -->
 
-</body>
-</html>
+        <section class="generalwrapper dm-shadow clearfix">
+        	<div class="container">
+				<div class="row">
+                	<div id="left_sidebar" class="col-lg-2 col-md-3 col-sm-3 col-xs-12 first clearfix">
+              			<div class="widget clearfix">
+                        	<div class="title"><h3>Banner Ads</h3></div>
+                            <!-- will be added later on a template
+							<a href="#"><img src="demos/03_banner.png" alt="" class="img-thumbnail img-responsive"></a> -->
+                        </div><!-- end widget -->
+
+              			<div class="widget clearfix">
+                        	<div class="title"><h3>Site Links</h3></div>
+                            <!-- will be added later on a template
+                            <ul class="list">
+                            	<li><a title="" href="#">Support</a></li>
+                            	<li><a title="" href="#">Get in touch</a></li>
+                            	<li><a title="" href="#">About us</a></li>
+                            	<li><a title="" href="#">Terms of use</a></li>
+                            	<li><a title="" href="#">Copyrights</a></li>
+                            	<li><a title="" href="#">Join us</a></li>
+                            </ul>-->
+                        </div>
+                    </div><!-- #left_sidebar -->
+
+                	<div id="content" class="col-lg-7 col-md-6 col-sm-6 col-xs-12 clearfix">
+                    	<div class="modal-body clearfix">
+                        <h3 class="big_title">Do you have questions? <small>Dont worry! We're here to help you</small></h3>
+                        	<p>Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free.</p>
+                            <hr>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+								<div class="ImageWrapper boxes_img">
+                            		<img src="/img/demos/01_about.jpg" class="img-responsive" alt="">
+									<div class="ImageOverlayH"></div>
+										<div class="Buttons StyleSc">
+											<span class="WhiteSquare"><a href="#"><i class="fa fa-facebook"></i></a></span>
+											<span class="WhiteSquare"><a href="#"><i class="fa fa-twitter"></i></a></span>
+											<span class="WhiteSquare"><a href="#"><i class="fa fa-google-plus"></i></a></span>
+										</div>
+								</div>
+                                {{> contact_details }}
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                {{> contactForm }}
+                               <!-- removed using simple contact form package
+                                <form id="contact" class="row" action="contact.php" name="contactform" method="post">
+                                    <input type="text" name="name" id="name" class="form-control" placeholder="Name">
+                                    <input type="text" name="email" id="email" class="form-control" placeholder="Email">
+                                    <input type="text" name="phone" id="phone" class="form-control" placeholder="Phone">
+                                    <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject">
+                                    <textarea class="form-control" name="comments" id="comments" rows="6" placeholder="Your Message ..."></textarea>
+                                    <button type="button" class="btn btn-primary">Send Message</button>
+                                </form> -->
+                            </div>
+                        </div>
+                    </div><!-- end content -->
+
+                    <div id="right_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 last clearfix">
+                    	<div class="widget clearfix">
+                        	<div class="search_widget">
+                            	<div class="title"><h3><i class="fa fa-search"></i> Search For Property</h3></div>
+								<form action="#" id="search_form">
+                                 	<input type="text" class="form-control" placeholder="Search by ID or property name...">
+								</form><!-- end search form -->
+                            </div><!-- end search_widget -->
+                        </div><!-- end widget -->
+
+                    	<div class="widget clearfix">
+                        	<div class="agents_widget">
+                            	<div class="title"><h3><i class="fa fa-users"></i> Our Agents</h3></div>
+
+
+                            </div><!-- end of agents_widget -->
+						</div><!-- end of widget -->
+                        <!--
+                     	<div class="widget clearfix">
+                        	<div class="title"><h3>Banner Ads</h3></div>
+							<img data-effect="fade" class="text-center img-thumbnail img-responsive" src="demos/01_banner.png" alt="">
+						</div> --><!-- end of widget -->
+					</div><!-- end sidebar -->
+
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section><!-- end generalwrapper -->
+
+                 <script type="text/javascript">
+
+                        var locations = [
+                        ['<div class="infobox agents_widget"><div class="agent clearfix"><div class="image"><img class="img-thumbnail img-responsive" src="/img/demos/01_home.jpg" alt=""></div><div class="agent_desc"><h3 class="title"><a href="single-property.html">OUR OFFICE</a></h3><span>RABAT</span><br>+90 555 666 77 88</p></div></div></div>', 33.971590, -6.849813, 1]
+                        ];
+
+                        var map = new google.maps.Map(document.getElementById('map'), {
+                          zoom: 10,
+                            scrollwheel: false,
+                            navigationControl: true,
+                            mapTypeControl: false,
+                            scaleControl: false,
+                            draggable: true,
+                            styles: [ { "stylers": [ { "hue": "#19B8DF" }, { "gamma": 1 } ] } ],
+                            center: new google.maps.LatLng(33.971590, -6.849813),
+                          mapTypeId: google.maps.MapTypeId.ROADMAP
+                        });
+
+                        var infowindow = new google.maps.InfoWindow();
+
+                        var marker, i;
+
+                        for (i = 0; i < locations.length; i++) {
+
+                            marker = new google.maps.Marker({
+                            position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                            map: map ,
+                            icon: 'images/marker.png'
+                            });
+
+
+                          google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                            return function() {
+                              infowindow.setContent(locations[i][0]);
+                              infowindow.open(map, marker);
+                            }
+                          })(marker, i));
+                        }
+                 </script>
+</template>
