@@ -15,4 +15,4 @@ Template.topBar.events({
             sort: {name: 1}
         });
     }
-})
+});
