@@ -1,6 +1,7 @@
 Router.configure({
     layoutTemplate: 'layoutMain',
-    notFoundTemplate: '404'
+    notFoundTemplate: '404',
+    loadingTemplate: 'loading'
 });
 
 Router.configure({
@@ -15,6 +16,9 @@ Router.map(function() {
 
         onAfterAction: function(){
             document.title = 'Altannonces | Home';
+        },
+        subscriptions: function(){
+            return Meteor.subscribe('grid-view');
         }
     });
     this.route('Login', {
@@ -50,29 +54,56 @@ Router.map(function() {
         template: 'submit_property',
         layoutTemplate: 'layoutMain',
 
-        onBeforeAction: function(){
-            if(!Meteor.user()){
-                this.render('/login');
-            }
-
-        },
+        //onBeforeAction: function(){
+        //    if(!Meteor.user()){
+        //        this.render('/login');
+        //    }
+        //
+        //},
 
 
         onAfterAction: function(){
             document.title = 'Altannonces | Submit Property';
         }
     });
-    this.route('SingleProperty', {
-        path: '/single_property',
+    this.route('Properties', {
+        path: '/properties/:_id',
         template: 'single_property',
-        layoutTemplate: 'layoutMain'
+        layoutTemplate: 'layoutMain',
+
+        waitOn: function(){
+            return Meteor.subscribe('single-property', this.params._id);
+        },
+        onAfterAction: function(){
+            data = Properties.findOne({_id:this.params._id});
+            if(_.isObject(data) && !_.isArray(data)){
+                document.title = 'Altannonces |'+ data.title;
+            } else {
+                document.title = 'Altannonces |'+ this.route.getName();
+            }
+        }
+
     });
     this.route('Acheter', {
-        path: '/acheter/:{_id}',
+        path: '/acheter/:city',
         template: 'acheter',
         layoutTemplate: 'layoutMain',
+        waitOn: function(){
+            return Meteor.subscribe('acheter', this.params.city);
+        },
         data: function(){
-            return Cities.findOne({_id: this.params._id});
+            return Properties.findOne({city: this.params.city});
+        }
+    });
+    this.route('Louer', {
+        path: '/louer/:city',
+        template: 'louer',
+        layoutTemplate: 'layoutMain',
+        waitOn: function(){
+            return Meteor.subscribe('louer', this.params.city);
+        },
+        data: function(){
+            return Properties.findOne({city: this.params.city});
         }
     });
     this.route('Contact', {
