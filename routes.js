@@ -66,7 +66,15 @@ Router.map(function() {
         data: function(){
             return Cities.findOne({_id: this.params._id});
         }
-    })
+    });
+    this.route('Contact', {
+        path: '/contact',
+        template: 'contact',
+        layoutTemplate: 'layoutMain',
+        data: function(){
+            return document.title = 'Altannonces | Contact Us';
+        }
+    });
 
 
 
