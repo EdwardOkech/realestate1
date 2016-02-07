@@ -4,7 +4,7 @@ if(Meteor.isClient){
         event.preventDefault();
         var email = $('[name=reg-email]').val();
         var password = $('[name=reg-password]').val();
-        Accounts.createUser({
+        userId = Accounts.createUser({
             email: email,
             password: password
         }, function(error){
@@ -17,6 +17,9 @@ if(Meteor.isClient){
             }
         });
         Router.go('/home');
+        Meteor.users.update(userId,{$set: {
+            roles: {editor: true},
+        }})
     }
 });
     Template.navbar.events({

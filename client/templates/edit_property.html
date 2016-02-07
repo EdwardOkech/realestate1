@@ -1,19 +1,18 @@
-<template name="adsList">
-     <section class="post-wrapper-top dm-shadow clearfix">
+<template name="edit_property">
+    <section class="post-wrapper-top dm-shadow clearfix">
             <div class="container">
                 <div class="post-wrapper-top-shadow">
                     <span class="s1"></span>
                 </div>
                 <div class="col-lg-12">
                     <ul class="breadcrumb">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">Pages</a></li>
-                        <li>Agencies list page</li>
+                        <li><a href="/home">Home</a></li>
+                        <li>Edit property</li>
                     </ul>
-                    <h2>Agencies list page</h2>
+                    <h2>Edit property</h2>
                 </div>
             </div>
-        </section><!-- end post-wrapper-top -->
+        </section>
 
         <section class="generalwrapper dm-shadow clearfix">
         	<div class="container">
@@ -21,14 +20,13 @@
                 	<div id="left_sidebar" class="col-lg-2 col-md-3 col-sm-3 col-xs-12 first clearfix">
               			<div class="widget clearfix">
                         	<div class="title"><h3>Banner Ads</h3></div>
-                            <!--
-							<a href="#"><img src="demos/03_banner.png" alt="" class="img-thumbnail img-responsive"></a>
-							-->
+                            <!-- will be added later in a template
+							<a href="#"><img src="/img/demos/03_banner.png" alt="" class="img-thumbnail img-responsive"></a> -->
                         </div><!-- end widget -->
 
               			<div class="widget clearfix">
                         	<div class="title"><h3>Site Links</h3></div>
-                            <!--
+                            <!-- will be added later
                             <ul class="list">
                             	<li><a title="" href="#">Support</a></li>
                             	<li><a title="" href="#">Get in touch</a></li>
@@ -41,9 +39,10 @@
 
                     	<div class="widget cats_widget clearfix">
 							<div class="title"><h3><i class="icon-sale"></i> For Sale</h3></div>
-                            <!--
                 			<ul class="real-estate-cats-widget">
+                                <!-- will be added later
                                 <li><a href="#">Housing (21)</a>
+
                                     <ul>
                                         <li><a href="#">Apartment</a></li>
                                         <li><a href="#">Villa</a></li>
@@ -63,14 +62,14 @@
                                     <ul>
                                         <li><a href="#">Arable Field</a></li>
                                     </ul>
-                                </li>
-                            </ul>-->
+                                </li> -->
+                            </ul>
                         </div><!-- end widget -->
 
                     	<div class="widget clearfix">
 							<div class="title"><h3><i class="icon-rent"></i> For Rent</h3></div>
-                            <!--
                 			<ul class="real-estate-cats-widget">
+                                <!-- will be added later
                                 <li><a href="#">Housing (15)</a>
                                     <ul>
                                         <li><a href="#">Apartment</a></li>
@@ -88,51 +87,60 @@
                                         <li><a href="#">Arable Field</a></li>
                                         <li><a href="#">Land</a></li>
                                     </ul>
-                                </li>
-                            </ul>-->
+                                </li> -->
+                            </ul>
                         </div><!-- end widget -->
                     </div><!-- #left_sidebar -->
 
                 	<div id="content" class="col-lg-7 col-md-6 col-sm-6 col-xs-12 clearfix">
+                    	<div class="property_wrapper boxes clearfix">
+							<h3 class="big_title">List Property Form<small>You can submit your property</small></h3>
 
-                            <div class="boxes agencies_widget">
-                                <div class="col-lg-3">
-                                    <!--
-                                    <div class="image">
-                                        <img class="img-responsive img-thumbnail" src="demos/agencies_logo.png" alt="">
-                                    </div> --><!-- end agencies img -->
-                                </div>
-                                <div class="col-lg-9">
-                                    <div class="agencies_desc">
-                                        <h3 class="title">NYC Real Estate Group</h3>
-                                        <p>Vele variaties van passages van Lorem Ipsum beschikbaar maar het merendeel heeft te lijden gehad van wijzigingen in een of andere vorm...</p>
-                                        <a href="/single_property" class="btn btn-primary btn-sm">About Property</a> <a href="/edit_property/{{ _id }}" class="btn btn-primary btn-sm">Edit Property</a>
+                            {{#autoForm collection="Properties" id="property_submit_form" type="update"}}
+                                <fieldset>
+                                    {{> afQuickField name="title" id="title" placeholder="Title" value="{{title}}" }}
 
-                                    </div><!-- agencies_desc -->
-                                </div>
-                                <div class="clearfix"></div>
-                                <div class="agencies_meta">
-                                    <span><i class="fa fa-envelope"></i> <a href="mailto:support@sitename.com">support@sitename.com</a></span>
-                                    <span><i class="fa fa-link"></i> <a href="#">www.sitename.com</a></span>
-                                    <span><i class="fa fa-phone-square"></i> +1 232 444 55 66</span>
-                                </div><!-- end agencies_meta -->
-                            </div><!-- end boxes -->
+                                    {{> afQuickField name="description" id="description" rows=6  value="{{description}}" }}
+                                    {{> afQuickField name="type" id="type" value="{{type}}" }}
+                                    {{> afQuickField name="status" id="status" value="{status}}" }}
+                                    {{> afQuickField name="city" id="country" value="{{city}}" }}
+                                    {{> afQuickField name="bedrooms" value="{{bedrooms}}" }}
+                                    {{> afQuickField name="bathrooms" value="{{bathrooms}}" }}
+                                    {{> afQuickField name="parking" value="{{parking}}" }}
+                                    {{> afQuickField name="furnished" type="boolean-checkbox" }}
+                                    {{> afQuickField name="airConditioning"  type="boolean-checkbox" }}
+                                    <hr>
+                                    <div class="row clearfix">
+                                        <div class="col-lg-12 col-md-12 col-lg-sm-12">
+                                            <div class="input-group">
 
-                            <!-- end boxes -->
+                                                 {{> afQuickField name="price" value="{{price}}" }}
 
-						<div class="pagination_wrapper clearfix">
-                            <!-- Pagination Normal -->
-                            <ul class="pagination">
-                              <li><a href="#">«</a></li>
-                              <li class="active"><a href="#">1</a></li>
-                              <li><a href="#">2</a></li>
-                              <li><a href="#">3</a></li>
-                              <li><a href="#">4</a></li>
-                              <li><a href="#">5</a></li>
-                              <li class="disabled"><a href="#">»</a></li>
-                            </ul>
-                        </div>
+                                            </div>
+                                        </div>
 
+                                    </div>
+                                    <hr>
+                                    <div class="fileupload fileupload-new" data-provides="fileupload">
+                                       <!-- <div class="fileupload-preview thumbnail"></div>-->
+                                    </div>
+                                    <div>
+
+
+                                            {{> afQuickField name="photos"  type="file"}}
+
+                                    </div>
+                                    <div class="clearfix"></div>
+
+                                        <hr>
+                                    {{> afQuickField name="address" id="geocomplete"  placeholder="Type in an address"}}
+                                    <!--<input id="find" type="button" class="btn btn-primary" value="Find Address" />-->
+                                    <div class="map_canvas"></div>
+                                        <hr>
+                                </fieldset>
+                                <button type="submit" class="btn btn-primary">SEND DETAILS</button>
+                           {{/autoForm }}
+						</div><!-- end property_wrapper -->
                     </div><!-- end content -->
 
                     <div id="right_sidebar" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 last clearfix">
@@ -151,14 +159,30 @@
 
                             </div><!-- end of agents_widget -->
 						</div><!-- end of widget -->
+                        <!-- will be added in a template
                      	<div class="widget clearfix">
                         	<div class="title"><h3>Banner Ads</h3></div>
-							<!--<img data-effect="fade" class="text-center img-thumbnail img-responsive" src="demos/01_banner.png" alt="">-->
-						</div><!-- end of widget -->
+							<img data-effect="fade" class="text-center img-thumbnail img-responsive" src="/img/demos/01_banner.png" alt="">
+						</div> --><!-- end of widget -->
 					</div><!-- end sidebar -->
 
                 </div><!-- end row -->
             </div><!-- end container -->
         </section>
+     <script src="js/jquery.geocomplete.js"></script>
+     <script src="js/logger.js"></script>
 
+      <script>
+      $(function(){
+        $("#geocomplete").geocomplete({
+          map: ".map_canvas",
+          details: "form",
+          types: ["geocode", "establishment"],
+            draggable: true
+        });
+        $("#find").click(function(){
+          $("#geocomplete").trigger("geocode");
+        });
+      });
+    </script>
 </template>

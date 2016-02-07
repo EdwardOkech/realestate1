@@ -50,6 +50,13 @@
                                  <li class="dropdown fhmm-fw"><a href="/submit_property" >CREER UNE ANNONCE </a>
                                     <!-- end drop down menu -->
                                 </li><!-- end list elements -->
+                                <!-- start of ads list link for logged in users-->
+                                {{#if currentUser.roles.editor }}
+                                <li class="dropdown fhmm-fw"><a href="/adsList" >MES-ANNONCES </a>
+
+                                </li>
+                                {{/if }}
+                                <!-- end of ads list link for logged in users-->
                                 <!-- standard drop down -->
                                 <li class="dropdown"><a href="/contact" >CONTACT </a>
                                     <!-- end dropdown-menu -->
