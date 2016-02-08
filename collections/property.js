@@ -1,4 +1,19 @@
 Properties = new Mongo.Collection('properties');
+PropertiesStatus = new Mongo.Collection('propertiesStatus');
+
+//Schemas.PropertyStatus = new SimpleSchema({
+//    status:{
+//        type: String,
+//        allowedValues: ['pending','approved','expired']
+//
+//    }
+//});
+//
+//PropertiesStatus.attachSchema(Schemas.PropertyStatus);
+//
+//PropertiesStatus.insert({}, function(error, result){
+//
+//});
 
 
 Schemas.Property = new SimpleSchema({
@@ -102,7 +117,11 @@ Schemas.Property = new SimpleSchema({
             type: "select-checkbox",
 
         }
-    },
+    }
+    //currentState:{
+    //    type:Schemas.PropertyStatus.status,
+    //    optional:true
+    //}
     //workflow:{
     //    type: [String],
     //    allowedValues: ['approved','declined','submitted','expires'],
@@ -126,3 +145,19 @@ Properties.attachSchema(Schemas.Property);
 Properties.insert({}, function(error, result){
 
 });
+if(Meteor.isServer){
+    Properties.allow({
+        insert: function(userId, doc){
+            return userId && doc.owner === userId && Meteor.user().roles.editor;
+        },
+        update: function(userId, doc, fields, modifier){
+            return Meteor.user().roles.editor;
+        },
+        fetch : ['owner']
+    });
+    Properties.deny({
+        update: function(userId, docs, fields, modifiers){
+            return _.contains(fields, '*');
+        }
+    });
+}

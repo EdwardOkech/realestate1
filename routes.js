@@ -63,14 +63,14 @@ Router.map(function() {
         template: 'submit_property',
         layoutTemplate: 'layoutMain',
 
-        //onBeforeAction: function(){
-        //    if(!Meteor.userId()){
-        //        this.render('/login');
-        //    } else {
-        //        this.next();
-        //    }
-        //
-        //},
+        onBeforeAction: function(){
+            if(!Meteor.userId()){
+                this.render('/login');
+            } else {
+                this.next();
+            }
+
+        },
 
 
         onAfterAction: function(){
@@ -150,14 +150,14 @@ Router.map(function() {
             return document.title = 'Altannonces | Mes-annonces';
         }
     });
-    var requiresLogin = function(){
-        if(!Meteor.user() || !Meteor.user().roles.editorRoles){
-            this.render('404');
-        } else {
-            this.next();
-        }
-    };
-    Router.onBeforeAction(requiresLogin, {only: ['Submit Property', 'Edit Property']});
+    //var requiresLogin = function(){
+    //    if(!Meteor.user() || !Meteor.user().roles.editorRoles){
+    //        this.render('404');
+    //    } else {
+    //        this.next();
+    //    }
+    //};
+    //Router.onBeforeAction(requiresLogin, {only: ['Submit Property', 'Edit Property']});
 
 
 

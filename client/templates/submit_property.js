@@ -26,3 +26,18 @@ Template.submit_property.helpers({
         });
     }
 });
+
+//Template.submit_property.events({
+//    'click #send-property': function(events){
+//        event.preventDefault();
+//        Properties.insert({currentState: 'pending'});
+//
+//        Properties.allow({
+//            insert: function(userId, doc){
+//                return true;
+//            }
+//        });
+//
+//
+//    }
+//});

@@ -27,10 +27,19 @@ Meteor.publish('tweets', function(){
     return Tweets.find();
 });
 
-Meteor.publish('editRoles', function(){
+Meteor.publish('editorRoles', function(){
     if(this.userId){
         return Meteor.users.find({_id: this.userId}, {fields: {roles: 1}});
     } else {
         this.ready();
     }
 });
+
+Meteor.publish('propertiesForUser', function(){
+    userId = this.userId(),
+        currentUserProperties = Properties.find({"owner": userId});
+    if(currentUserProperties){
+        return currentUserProperties;
+    }
+    this.ready();
+})
