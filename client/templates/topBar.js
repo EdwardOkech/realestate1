@@ -1,18 +1,18 @@
-Template.topBar.onRendered({
-    landingAuto : function(){
-        AutoCompletion.init('input#filter-entry');
-    }
+//Template.topBar.onRendered({
+//    landingAuto1 : function(){
+//        AutoCompletion.init('input#filter-entry');
+//    }
+//
+//});
 
-});
-
-Template.topBar.events({
-    'keyup input#filter-entry' : function(){
-        AutoCompletion.autocomplete({
-            element: 'input#filter-entry',
-            collection: Cities,
-            field: 'name',
-            limit: 0,
-            sort: {name: 1}
-        });
-    }
-});
+//Template.topBar.events({
+//    'keyup input#filter-entry' : function(){
+//        AutoCompletion.autocomplete({
+//            element: 'input#filter-entry',
+//            collection: Cities,
+//            field: 'name',
+//            limit: 0,
+//            sort: {name: 1}
+//        });
+//    }
+//});

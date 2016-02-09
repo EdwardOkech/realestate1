@@ -1,11 +1,3 @@
-Template.layoutLanding.helpers({
-    onClickHelper1:function(){
-         $('#select').click(function () {
-		   $('#triangle_down').show();
-	       });
-    }
-});
-
 Template.layoutLanding.onRendered({
     landingAuto : function(){
         AutoCompletion.init('input#landing-entry');
@@ -23,4 +15,4 @@ Template.layoutLanding.events({
             sort: {name: 1}
         });
     }
-})
+});
